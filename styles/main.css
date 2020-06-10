@@ -1,0 +1,264 @@
+/* Disabling classic cursor */
+
+*{
+    cursor: none;
+}
+
+body
+{
+    margin: 0;
+}
+
+::selection {
+    background: #FFE66D;
+}
+
+/* 
+
+*/
+
+.toggle-audio
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.toggle-audio
+.title
+{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 32px;
+    z-index: 5;
+}
+
+.toggle-audio
+.background
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #ffffff;
+    opacity: 0.80;
+    z-index: 4;
+}
+
+/* 
+
+*/
+
+.overlay
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay
+.info-button
+{
+    top: 0;
+    left: 0;
+    margin: 20px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    pointer-events: all;
+    background-image: url("../textures/question-mark.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+
+.overlay
+.info-button:hover
+{
+    opacity: 0.75;
+    transform: rotateZ(5deg);
+}
+
+.overlay
+.information-box
+{
+    width: 60vw;
+    height: 60vh;
+    background: #ffffff;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    pointer-events: all;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    z-index: 1;
+}
+
+.overlay
+.information-box
+.header
+{
+    width: 60vw;
+    height: 8vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlay
+.information-box
+.header
+.exit
+{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+.overlay
+.information-box
+.header
+.title
+{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.overlay
+.information-box
+.header
+.icon
+{
+    width: 50px;
+    height: 50px;
+    background-image: url("../textures/favicon.png");
+    background-size: cover;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.overlay
+.information-box
+.header
+.icon:hover
+{
+    transform: rotateZ(20deg);
+}
+
+.overlay
+.information-box
+.main
+{
+    width: 60vw;
+    height: 44vh;
+    background: #BEBBBB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay
+.information-box
+.main
+.text
+{
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin: 20px;
+    text-align: center;
+}
+
+.overlay
+.information-box
+.footer
+{
+    width: 60vw;
+    height: 8vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay
+.information-box
+.footer
+.title
+{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.overlay
+.black-background
+{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    opacity: 0.60;
+    z-index: 0;
+}
+
+/*
+
+Canvas used
+
+*/
+
+.game
+{
+    width: 100vw;
+    height: 100vh;
+    outline: none;
+}
+
+/*
+
+Simple cursor FX
+
+*/
+
+.cursor
+{
+    width: 30px;
+    height: 30px;
+    background: #000000;
+    opacity: 65%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 900;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(-50%);
+    transition: 0.3s ease, left 0s, top 0s, width 0.5s, height 0.5s;
+}
+
+.cursor-on-object
+{
+    width: 60px;
+    height: 60px;
+    transform: translateX(-50%) translateY(-50%);
+}

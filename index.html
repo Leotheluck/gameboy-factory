@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameboy Factory | Generating consoles !</title>
+    <meta name="description" content="A very light but complex animated scene, fully generated from JS">
+    <link rel="shortcut icon" href="./textures/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <!-- Allows to toggle audio -->
+
+    <div class="toggle-audio">
+        <div class="background"></div>
+        <div class="title">Click anywhere to begin the experience.</div>
+    </div>
+
+    <!-- Little information tab -->
+
+    <div class="overlay">
+        <div class="info-button"></div>
+        <div class="information-box">
+            <div class="header">
+                <div class="exit">×</div>
+                <div class="title">gameboy factory</div>
+                <div class="icon"></div>
+            </div>
+            <div class="main">
+                <p class="text">In 1989, "Ninpenbo" (copyrights, you know) was creating this very special gameboy. However, a problem occured! Japan moved from its original location by about 200 miles using very powerful boat propellers, leaving their factory on the water, which didn't discourage Ninpenbo, that continued to build its little console over the water</p>
+                <p class="text">The GameBoy Factory is an open-source project consisting of a very lightweight file holding a very complex animated scene, which is the one you can see here, the scene also has OrbitControls and everything was set in a way that will allow me later to make it into a little game</p>
+            </div>
+            <div class="footer">
+                <div class="title">Copyright © 2020 - Leotheluck (school project)</div>
+            </div>
+        </div>
+        <div class="black-background"></div>
+    </div>
+
+    <!-- Cursor & canvas -->
+
+    <div class="cursor"></div>
+    <canvas class="game"></canvas>
+
+    <!-- Scripts imported -->
+
+    <script src="./src/three.min.js"></script>
+    <script src="./src/OrbitControls.js"></script>
+    <script src="./src/Tween.js"></script>
+
+    <!-- Scripts created -->
+
+    <script src="./scripts/Animations.js"></script>
+    <script src="./scripts/SceneBuilder.js"></script>
+    <script src="./scripts/GameMechanics.js"></script>
+    <script src="./scripts/Cursor.js"></script>
+    <script src="./scripts/AudioEffects.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
