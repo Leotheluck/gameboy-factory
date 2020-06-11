@@ -1,7 +1,7 @@
 # **Gameboy Factory `v1.0.0`**
 
 Gameboy Factory is a completely `open-source` animated scene created using `THREE.js` and `Tween.js`.
-It has been designed to be used on a local server since THREE.js needs it, I recommand you to use `MAMP`
+It has been designed to be used on a local server since THREE.js needs it, I recommand you to use `MAMP` (you can also visit the GitHub link if you just want to explore).
 
 ## **Features**
 
@@ -21,3 +21,7 @@ It has been designed to be used on a local server since THREE.js needs it, I rec
 ## **Screenshots**
 
 ![Gameboy Factory | Working...](https://i.imgur.com/9fXLBbA.png)
+"Global view of the scene"
+![Gameboy Factory | POV, Getting transformed by a robot worker...](https://i.imgur.com/wUkXCi4.png)
+"POV, Getting transformed into a GameBoy by a robot worker..."
+
